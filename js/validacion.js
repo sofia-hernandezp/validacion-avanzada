@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     const verificarTerminos = () => {
         document.querySelector('label[for="terminos"]').classList.remove('is-invalid','is-valid', 'text-danger','text-success');
         document.querySelector('#terminos').classList.remove('bg-danger','bg-success')
-        botonModal.classList.add('text-danger','text-success');
+        botonModal.classList.remove('text-danger','text-success');
       if(!terminosCheck.checked){
           terminosMensaje.setCustomValidity("Acepta los terminos y condiciones")
           document.querySelector('label[for="terminos"]').classList.add('is-invalid', 'text-danger');
